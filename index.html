@@ -7,21 +7,23 @@
     <div class="container__browser">
         
         <div class="pomodoro__app">
-            <div>
-                <button class="work__button">work</button>
-                <button class="rest__button">rest</button>
+            <div class="top__button__container">
+                <button class="work__rest active" id="work__button">work</button>
+                <button class="work__rest" id="rest__button">rest</button>
             </div>
             
             <h1 class="pomodoro__time">25:00</h1>
-            <div>
+            <div class="top__button__container">
                 <button class="start__button">START</button>
                 <button class="stop__button">STOP</button>
             </div>
             
+            
+        </div>
         <p class="focus__rest">Focus</p>
 
-        </div>
-
     </div>
+    <audio id="button__sound" src="@materials/button.mp3" preload="auto"></audio>
+    <audio id="start__sound" src="@materials/lassic.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
